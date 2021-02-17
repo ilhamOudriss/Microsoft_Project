@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* to avoid padding affect the width*/
+}
+.container .grid_global{
+    grid-template-columns: repeat(4,2fr);
+   }
+.container li a{
+    flex: 1;
+}
+.container .menu-btn{
+    position: absolute;
+    left: 90%;
+    top:23px;
+    right:10%;
+    z-index: 200;
+    display: none;
+}
+.container .menu-btn .fa-bars {
+    font-size: 30px;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+
+.container .header ul{
+    list-style: none;
+}
+.shop_btn a:hover{
+opacity: 90%;   
+
+}
+
+.container .header .hr-menu li a:hover{
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+}
+.container .header .hr-menu li{
+    padding-right: 9px;
+    padding-left: 9px;
+}
+.header .All-menu ul{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+
+}
+.container .All-menu{
+    display:flex;
+}
+.container .logo img{
+    width: 121px;
+}
+
+.container .slide-shop{
+    width:100%;
+    height: 350px;
+    background: url(../microsoft/slide1.png) no-repeat;
+    background-position: center ;
+    background-size:100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  
+}
+ul.side-menu li a{   
+   padding:0 14px;
+
+}
+.slide-shop p,.slide-shop h3{
+transform: translateY(37px);
+
+}
+
+.container{
+    margin: auto;
+    width: 60%;
+}
+.shop_btn{
+    height: 12%;
+    width: 20%;
+    background-color: black;
+    transform: translateY(40px);
+}
+.shop_btn a,.shop_btn i{
+    color: white;
+    font-size: 18px;
+}
+.grid_global{
+    display: grid;
+    /*grid-template-columns: 10% 10% 10% 10%;*/
+    grid-template-columns: repeat(4,2fr);
+    grid-gap: 10px;
+}
+
+.container .grid_global img{
+     width: 100%;
+}
+.container .grid_global a{
+    font-weight: bolder;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 15px;
+}
+.container .xbox{
+width: 100%;
+background: url('../microsoft/xbox.png') no-repeat center;
+background-size: cover;
+margin-top: 17px;
+display: flex;
+flex-direction: column;
+
+}
+.xbox .box-descr h3,.xbox .box-descr p{
+    width: 34%;
+    transform: translate(50px,19px);
+}
+.xbox button,.xbox button a {
+    background-color: black;
+    color: white;
+    width: 31%;
+    padding: 14px 0;
+    margin-top: 15px;
+    margin-left: 15%;
+    font-size: 16px;
+}
+.xbox .box-descr h3{
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.xbox .box-descr p, .xbox .box-descr h3{
+    margin:10px 0px;  
+}
+.carbon{
+    width: 100%;
+    height: 300px;
+    background:url('../microsoft/carbon.jpg') no-repeat center;
+    background-size: cover;
+}
+.carbon p,.carbon h2{
+transform: translate(28px, 98px);
+color: white;
+}
+.carbon h2{
+text-transform: capitalize;
+}
+.carbon .carbon-btn,.carbon .carbon-btn a{
+    background-color:rgb(231, 223, 223);
+    color:black;
+    width: 14%;
+    padding: 14px 0;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+   transform: translate(100px,115px);
+}
+.container .sc-media-icon{
+display: flex;
+align-items: center;
+margin-top: 20px;
+}
+.container .sc-media-icon i, .container .sc-media-icon p{
+    margin: 10px;
+    text-transform: capitalize;
+}
+.container .grid2{
+    width: 100%;
+    display: grid;
+    /*grid-template-columns: 10% 10% 10% 10%;*/
+    grid-template-columns: repeat(4,2fr);
+    grid-gap: 10px;
+    margin-top: 15px;
+}
+.container .grid2 img{
+    width: 100%;
+}
+.container .grid2 a{
+    display: block;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 9px;
+}
+@media screen and (max-width:600px) and (min-width:385px){
+    .carbon button.carbon-btn{
+        
+        width:80%;
+
+    }
+    .carbon button.carbon-btn{
+        transform: translate(10px,40px);
+        width:80%;
+
+    }
+    .carbon p,.carbon h2{
+        transform: translate(28px, 19px);
+        color: white;
+        }
+    .container  .All-menu ul.hr-menu{
+        
+        position: absolute;
+        flex-direction: column;
+        left:0;
+        top: 0;
+        background-color: rgb(184, 175, 175);
+        width: 50%;
+        height: 100%;
+        opacity: 0.7;
+        padding:20px;
+        transform: translateX(-20px);
+        display: none;
+        }    
+       
+    .container .menu-btn{
+        display: block;
+    
+    }
+    .container .grid2{
+        grid-template-columns: repeat(1,2fr);
+      
+    }
+    .container .grid_global{
+        grid-template-columns: repeat(1,2fr);
+       }
+    .xbox .box-descr p{
+        transform: translate(20px,15px);
+        width:49%;
+     }
+     .xbox .box-descr h3{
+         text-align: center;
+         width: 70%;
+         transform: translate(20px,15px);
+
+     }
+.xbox .btn-join{
+        width: 77%;
+        transform: translate(-9px,16px);
+    }
+.shop_btn {
+        font-size: 6px;
+        width: 58%;
+        transform: translateY(46px);
+        height: 12%;}
+.slide-shop p,.slide-shop h3{
+        transform: translateY(40px);}
+.container .slide-shop{
+        width: 100%;
+        background-size: cover;
+        margin-bottom: 10%;
+             }
+            
+.container .xbox{
+    height: 500px;
+    align-items: flex-start;
+    width: 100%;
+    background-size: cover;             }
+
+}
+
+
+@media screen and (max-width:800px) and (min-width:600px){
+
+    .container .All-menu .hr-menu li:last-child{
+        border: none;
+    }
+    
+    
+.All-menu .side-menu li
+{
+display: none;
+}
+    .container .grid2{
+        grid-template-columns: repeat(2,2fr);
+      
+    }
+    .xbox .box-descr p,.xbox .box-descr h3{
+       transform: translate(10px,120px);
+
+    }
+.container .xbox{
+        height: 500px;
+        line-height: 100%;
+        align-items: flex-start;
+        width: 100%;
+        background-size: cover;
+        margin-top: 17px;
+        display: flex;
+        background-attachment: scroll;
+        -webkit-backgroun-size:center;
+        }
+
+.xbox .btn-join{
+    width: 50%;
+    transform: translate(44px,-138px);
+}
+.container .slide-shop{
+width: 100%;
+background-size: cover;
+background-attachment:scroll;
+margin-bottom: 10%;
+margin-left: 20%;
+     }
+.shop_btn {
+        font-size: 6px;
+        width: 51%;
+        transform: translateY(51px);
+        height: 13%;
+    }
+    .container  .All-menu .hr-menu{
+        display: none;
+      
+        }    
+       
+ }
+.slide-shop p,.slide-shop h3{
+        transform: translateY(40px);}
+        
+.carbon .carbon-btn{
+    width: 16%;
+    padding: 14px 0;
+    font-size:15px;
+   }
+.header ul.side-menu{
+    display:flex; 
+    align-items: center; 
+   
+    
+}
+
+.container .All-menu .hr-menu li{
+padding: 10px;
+font-size: 18px;
+}
+
+
+.slide-shop h3{
+   position: relative;
+}
+
+.container .sc-media-icon i.fa{
+background-color: rgb(12, 12, 12);
+
+
+}
+.container .grid_global a:hover{
+  color: red;
+
+}
+.container .sc-media-icon .fa-twitter{
+    color: rgb(77, 159, 214);
+}
+.container .sc-media-icon .fa-facebook,.fa-linkedin{
+    color: rgb(18, 28, 168);
+    
+}
+.container .fa-instagram{
+  color: rgb(210, 30, 69);
+}
+.card1 a:hover > .card1 a i{
+margin-left: 20px;
+}
+.container header.header{
+    display: flex;
+    height: 70px;
+    padding: 16px 0px; 
+    align-items:center;
+    justify-content: space-evenly;
+   
+}
+.container  .All-menu .hr-menu{
+display: flex;
+align-items: center;
+
+}
